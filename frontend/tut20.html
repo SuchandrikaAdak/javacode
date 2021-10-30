@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: #9ab1a5;
+        }
+        .container
+        {
+            background-color: rgb(231,230,241);
+            border:3px solid rgb(64,6,119);
+            /* we can set top botton left right separately  for padding ,margin*/
+            /* padding-top:19px;
+            padding-left:19x; */
+
+            /* padding: 23px 56px 6px 78px; top  right bottom left */
+            padding: 34px 19px; /*padding: y(top/bottom) X(left/bottom)*/
+
+            margin: 14px 19px;   /* same for margin*/
+            border-radius: 23px;
+            width:533px;
+
+             box-sizing: border-box; 
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis consequuntur nam, quo aperiam explicabo. Dolor saepe rerum maxime at modi blanditiis beatae eius, necessitatibus culpa odit explicabo, molestiae, quae architecto soluta perspiciatis sequi!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis consequuntur nam, quo aperiam explicabo. Dolor saepe rerum maxime at modi blanditiis beatae eius, necessitatibus culpa odit explicabo, molestiae, quae architecto soluta perspiciatis sequi!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis consequuntur nam, quo aperiam explicabo. Dolor saepe rerum maxime at modi blanditiis beatae eius, necessitatibus culpa odit explicabo, molestiae, quae architecto soluta perspiciatis sequi!</p>
+    </div>
+
+    
+</body>
+</html>

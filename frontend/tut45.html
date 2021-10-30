@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid+media queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+
+        }
+
+        @media(max-width:300px)
+
+        /* jab max width500 ye laghu hogi*/
+            {
+            body {
+
+                background-color: sienna;
+            }
+        }
+
+        @media(max-width:500px) and (min-width:300px) {
+            body {
+
+                background-color: violet;
+            }
+        }
+
+        @media(max-width:800px) and (min-width:500px) {
+            body {
+
+                background-color: black;
+            }
+
+            .container {
+                
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media(min-width:800px) {
+            body {
+
+                background-color: yellow;
+            }
+
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+
+        }
+
+        nav {
+            grid-area: navbar;
+
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        aside {
+            grid-area: aside;
+
+        }
+
+        footer {
+            grid-area: footer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>about</span>
+            <span>service</span>
+            <span>us</span>
+        </nav>
+        <section class="bdr">
+            <h2> learn css in hindi</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, consequuntur pariatur, adipisci quam provident numquam quos facilis repellendus corporis, rerum reiciendis ex corrupti doloribus. Corrupti omnis fuga eius! Illo ab ut quibusdam error necessitatibus odit atque similique natus dolor nihil, mollitia labore doloribus laborum quas. Vel voluptas iure, velit ex perspiciatis nihil blanditiis. Ad dolore magnam nobis quae, corrupti earum quo maiores voluptates, eaque expedita et deserunt fugit fuga laudantium, consequatur possimus blanditiis aspernatur eum? Voluptates vitae inventore hic, exercitationem doloremque maxime autem minima omnis! Assumenda quas architecto neque nihil error dolorum ducimus est inventore totam cupiditate? Veniam saepe numquam fuga nostrum, cumque quis culpa accusamus! Delectus beatae tenetur, est, dolor sed nihil facere officiis minus obcaecati nostrum at libero optio corrupti.</p>
+        </section>
+        <aside>
+            <h1 class="bdr">More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright code with harry 2020
+
+    </footer>
+
+</body>
+
+</html>

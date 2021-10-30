@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+
+    }
+    /* if p is contained by any li which is contained by div */
+    /* div li picture{
+        color:yellow;
+        background-color: green;
+        font-weight: bold;
+
+    } */
+
+    /* div ka direct child p */
+    /* div >  p{
+        color:yellow;
+        background-color: green;
+        font-weight: bold;
+
+    } */
+    /* pichla sibling div  bhai bhai or p is next sibling of div*/
+    /* div+p{
+        color:white;
+        background-color:tomato;
+    } */
+
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>inside li</p></li>
+                <li>
+                    this will not get affected
+                </li>
+                <p>This is a paragraph inside ul</p>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost para</p>
+    
+</body>
+</html>

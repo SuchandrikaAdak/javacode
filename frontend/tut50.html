@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Methods</title>
+</head>
+<body>
+
+
+    <script>
+        var str="this is a string";
+        console.log(str);
+
+
+        //first occurence of is
+        var position=str.indexOf('is');
+        console.log(position);
+        position=str.lastIndexOf('is');
+        console.log(position);
+
+        //substring from a string
+        //can take so
+        var substr=str.slice(1,5);
+        console.log(substr);
+
+        //substring using substring
+        //cannot take negative values
+
+        var subs=str.substr(1,3);
+        //2nd value for number of characters
+        console.log(subs);
+
+
+        //replacing a substring with string
+        var replaced=str.replace('string','harry');
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newstr=str.concat('Newstr');
+        console.log(newstr);
+
+        //remobve white spaces
+
+        var strrr=str.trim();
+        console.log(strrr);
+
+
+        var char3=str.charAt(3);
+        console.log(char3);
+
+        // var char2=str.charCodeAt(2); not thAT important
+        console.log(str[2]);
+
+        
+    </script>
+    
+</body>
+</html>

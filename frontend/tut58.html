@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS settimeout and cleartimeout</title>
+</head>
+<body>
+    <div class="container">
+        this  is a container
+        <span id="time">time now is</span>
+    </div>
+    <script>
+        console.log("this is tut58");
+        // setTimeout--allows us to run function oneee after the interval of time
+        // clear timeout allows to run repeatedly after the interval of time
+
+
+        function greet(name,byetext)
+        {
+            console.log("hello good morning"+name+" "+byetext );
+        }
+        // timeout=setTimeout(greet,5000,"Harry","take"); //5second bad ayega
+        // // just need to name tghe function
+
+        // console.log(timeout);
+        // clearTimeout(timeout);//to clearout the setimeout
+
+
+        // int=setInterval(greet,1000,"harry","goodnight");
+        // clearInterval(int);
+
+
+        function displayTime()
+        {
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime,1000);
+
+        
+    </script>
+    
+</body>
+</html>

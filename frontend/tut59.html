@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAte and time</title>
+</head>
+<body>
+    <div class="conatainer"></div>
+    this is container
+
+    <span id="time"> current time is</span>
+    <script>
+        console.log("This is date and time tutorial");
+        let now=new Date();
+        console.log(now);
+
+
+        let newDate=new Date(3020,6,21,4,5,4);
+
+        // let newdate=new Date(year,month,date,hour,min,sec,mili)
+         
+
+        // console.log(dt);
+
+
+        let yr=newDate.getFullYear();
+        console.log(yr);
+
+        let month=newDate.getMonth();
+        console.log(month);
+
+
+        newDate.setDate(32);
+        newDate.setMinutes(23);
+        console.log(newDate);
+
+
+        setInterval(updateTime,1000);
+
+        function updateTime()
+        {
+            time.innerHTML=new Date();
+        }
+
+    </script>
+    
+</body>
+</html>
