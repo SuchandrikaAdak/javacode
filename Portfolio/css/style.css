@@ -1,0 +1,137 @@
+
+
+
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+
+
+/* ccs varriables */
+@import url(./partials/_variables.css);
+
+/* global style */
+@import url(./partials/global.css);
+
+
+
+/* start nav */
+.navbar-brand
+{
+    padding:0 2rem 0 5rem;
+}
+.navbar
+{
+    padding: 1rem 20rem;
+}
+
+.nav-link
+{
+    font:normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding:1.7rem;
+    color:var(--ttitle-color);
+}
+
+.active{
+    background: var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* end nav */
+
+/* banner area */
+
+.site-banner
+{
+    background: url() no-repeat 0% 50%;
+}
+.site-title h3{
+    padding-top:35%;
+    font-weight: 500;
+}
+h3::after
+{
+    content:"";
+    height: 2px;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+
+}
+
+.site-title h1{
+    font-size: 3rem;
+}
+.site-title h4{
+    font-size: 1.5rem;
+
+}
+
+.banner-image > img{
+    padding: 2rem 0 ;
+    width: 40rem;
+}
+
+
+/* end banner area */
+
+/* about me */
+
+.about-image > img{
+    padding-left: 150px;
+    padding-top: 50px;
+    width:30rem;
+}
+
+.about-area
+{
+    padding: 3rem 5rem;
+
+}
+
+.about-title > h2 >span{
+    display: block;
+    font: normal bold 20px/60px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.about-title.paragraph > p{
+    padding: 4rem 0;
+
+}
+
+/* about me end */
+
+/* gallerry start */
+
+
+.single-brand > img
+{
+    width: 450px;
+    padding-left:40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.brand > div > div >div >h4 
+{
+    display: block;
+    font: normal bold 20px/60px var(--roboto);
+    letter-spacing: 21px;
+    text-align: center;
+}
+
+.brand{
+    padding:0rem 5rem 0rem 5rem;
+}
+
+/* gallery end */
