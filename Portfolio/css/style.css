@@ -131,7 +131,130 @@ h3::after
 }
 
 .brand{
-    padding:0rem 5rem 0rem 5rem;
+    padding:0rem 0rem 0rem 5rem;
 }
 
 /* gallery end */
+
+/* project acrd area */
+
+.service-area
+{
+    padding:7rem 2rem;/*topbottom left right */
+
+}
+.services-title
+{
+    padding:0.14rem;
+
+
+}
+
+.service-title h1{
+    font-size: 35px;
+}
+
+.services
+{
+    background:rgb(248,252,253,0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition:box-shadow .7s ease ;
+}
+.services:hover
+{
+    box-shadow:var(--box-shadow) ;
+}
+.mlpic
+{
+    width:200px;
+}
+.mlpic
+{
+    width:200px;
+}
+.mlpic
+{
+    width:200px;
+}
+.mlpic
+{
+    width:200px;
+}
+
+
+
+/* end project */
+
+
+/* sub area */
+.subscribe-us-area
+{
+    padding: 5rem;
+}
+.subscribe
+{
+    background: url(../img/bgsub.png);
+    padding:10rem 0%;
+    margin:3rem auto;
+}
+.subscribe-title h4{
+    font:normal 700 30px/30px var(--roboto);
+    color:whitesmoke;
+
+}
+
+.subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 2rem;
+}
+
+.input-textbox input{
+    width: 400px;
+    padding:1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background:transparent;
+    color:whitesmoke;
+    font: normal 500 17px/20px var(--roboto);
+}
+.input-textbox input::placeholder
+{
+    color:white;
+}
+.btn-submit button{
+    background: whitesmoke;
+    color:black;
+    padding:.7rem 2rem;
+
+}
+
+
+/* end subscirbe */
+
+
+/* footer area */
+
+.footer-area
+{
+    padding: 0rem 5rem 5rem 5rem;
+    background:url(../img/footback.jpg) ;
+    
+}
+
+.social h5{
+    font:normal 500 23px/30px var(--roboto);
+}
+
+.social a > i{
+    font-size: 100px;
+    padding: 2rem;
+    color:var(--border-color);
+    
+}
+
+.social a:hover >i
+{
+    color:var(--primary-color);
+
+}
